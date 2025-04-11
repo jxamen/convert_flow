@@ -1,0 +1,56 @@
+프로젝트 구조 분석
+
+프로젝트 경로: D:\Projects\boosting_shop\convert_flow
+
+1. 주요 디렉토리 구조:
+   - 루트 디렉토리: /convert_flow
+     - header.php: 공통 헤더 파일
+     - footer.php: 공통 푸터 파일
+     - index.php: 메인 페이지
+
+   - 관리자 디렉토리: /admin
+     - 관리자 관련 기능이 있는 디렉토리
+
+   - 애셋 디렉토리: /assets
+     - /css: CSS 파일들 (dashboard.css 등)
+     - /js: JavaScript 파일들
+
+   - 앱 디렉토리: /app
+     - /campaign: 캠페인 관련 페이지
+     - /conversion: 전환 스크립트 관련 페이지
+     - /landing: 랜딩페이지 관련 페이지
+     - /form: 폼 관련 페이지
+     - /lead: 리드 관련 페이지
+     - /shorturl: 단축 URL 관련 페이지
+     - /push: 푸시 알림 관련 페이지
+     - /report: 보고서 관련 페이지
+
+   - API 디렉토리: /api
+     - API 관련 기능
+
+   - 인클루드 디렉토리: /include
+     - _common.php: 공통 함수와 설정
+     - /models: 데이터 모델 클래스들
+       - campaign.model.php
+       - conversion.model.php 등
+
+2. 주요 변수와 상수 설정:
+   - CF_PATH: 실제 서버 경로
+   - CF_URL: 사이트 URL
+   - CF_ADMIN_URL: 관리자 페이지 URL
+   - CF_ASSETS_URL: 자산(CSS, JS 등) URL
+   - CF_APP_URL: 앱 디렉토리 URL
+
+3. 데이터베이스 관련:
+   - CF_DB_ENGINE: InnoDB로 설정
+   - CF_DB_CHARSET: utf8mb4로 설정
+   - 테이블 접두사는 $cf_table_prefix 변수에 저장
+
+4. 컨텐츠 관리:
+   - 캠페인 관리: 목록, 생성, 조회, 수정, 삭제 기능
+   - 전환 스크립트 관리: 전환 유형(구매완료, 회원가입 등) 추적
+   - 랜딩페이지 관리: 템플릿 기반 페이지 생성 및 관리
+   - A/B 테스트 기능: 여러 버전의 랜딩페이지 테스트
+   - 리드 관리 및 데이터 전송 기능
+
+이 프로젝트는 CPA 마케팅 성과 분석 시스템으로 마케팅 캠페인의 전환율과 성과를 추적하고 관리하는 기능을 갖추고 있습니다.

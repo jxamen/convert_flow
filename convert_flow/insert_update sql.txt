@@ -1,0 +1,13 @@
+ $sql = "INSERT INTO table_name 
+	SET
+	    user_id = '$user_id',
+	    updated_at = NOW()"
+$result = sql_query($sql, true);
+
+
+ $sql = "UPDATE table_name 
+	SET
+	    user_id = '$user_id',
+	    updated_at = NOW() 
+	WHERE id = '$id'"
+$result = sql_query($sql, true);

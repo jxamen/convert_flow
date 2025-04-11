@@ -1,0 +1,114 @@
+/* 사용자 페이지 스타일 */
+
+/* 랜딩페이지 목록 스타일 */
+.landing-card {
+    transition: transform 0.2s;
+    height: 100%;
+}
+
+.landing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.landing-thumbnail {
+    height: 180px;
+    object-fit: cover;
+    background-color: #f8f9fa;
+}
+
+/* 템플릿 선택 페이지 */
+.template-grid .card {
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.template-grid .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.template-grid .card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.filter-btn.active {
+    background-color: #4e73df;
+    color: white;
+    border-color: #4e73df;
+}
+
+/* 폼 스타일 */
+.form-label.required::after {
+    content: " *";
+    color: red;
+}
+
+/* 미리보기 툴바 */
+.preview-toolbar {
+    background-color: #343a40;
+    color: white;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.device-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.device-btn {
+    background: none;
+    border: none;
+    color: #adb5bd;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+.device-btn.active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+/* 상태 뱃지 */
+.badge.bg-draft {
+    background-color: #6c757d;
+}
+
+.badge.bg-published {
+    background-color: #28a745;
+}
+
+.badge.bg-archived {
+    background-color: #17a2b8;
+}
+
+/* 페이지네이션 */
+.pagination .page-item.active .page-link {
+    background-color: #4e73df;
+    border-color: #4e73df;
+}
+
+/* 반응형 조정 */
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .btn-sm {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.75rem;
+    }
+    
+    .device-buttons {
+        gap: 5px;
+    }
+    
+    .device-btn {
+        padding: 2px 4px;
+        font-size: 0.8rem;
+    }
+}

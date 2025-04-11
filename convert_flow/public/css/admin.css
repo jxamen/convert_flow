@@ -1,0 +1,82 @@
+/* 관리자 페이지 스타일 */
+
+/* 템플릿 관리 페이지 스타일 */
+.template-preview-image {
+    max-height: 100px;
+    object-fit: cover;
+}
+
+.code-editor {
+    font-family: 'Consolas', 'Monaco', monospace;
+    line-height: 1.5;
+}
+
+/* 미리보기 툴바 */
+.preview-toolbar {
+    background-color: #343a40;
+    color: white;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.device-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.device-btn {
+    background: none;
+    border: none;
+    color: #adb5bd;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+.device-btn.active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+/* 템플릿 카드 스타일 */
+.template-card {
+    transition: transform 0.2s;
+    height: 100%;
+}
+
+.template-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.template-thumbnail {
+    height: 180px;
+    object-fit: cover;
+    background-color: #f8f9fa;
+}
+
+/* 폼 스타일 */
+.required-label::after {
+    content: "*";
+    color: red;
+    margin-left: 4px;
+}
+
+/* 페이지네이션 */
+.pagination .page-item.active .page-link {
+    background-color: #4e73df;
+    border-color: #4e73df;
+}
+
+/* 반응형 조정 */
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .btn-sm {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.75rem;
+    }
+}

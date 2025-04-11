@@ -1,0 +1,9 @@
+{
+    "tabWidth": 4,
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "phpVersion": "7.4",
+    "pluginSearchDirs": ["."],
+    "plugins": ["./node_modules/@prettier/plugin-php"]
+}
